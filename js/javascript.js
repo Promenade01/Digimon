@@ -49,6 +49,8 @@ function mostrarTarjeta(response){
 //Funcion para buscar un Digimon por nombre
 function buscarDigimon(event) {
     event.preventDefault(); //Evita que se recargue la página al hacer submit
+    document.getElementById("tabla").style.display = "none";
+    document.getElementById("contenido").style.display = "none";
     const inputBusqueda = document.getElementById("search-input");
     const nombreDigimon = inputBusqueda.value;
     if (nombreDigimon) {
